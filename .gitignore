@@ -1,2 +1,4 @@
 node_modules
 .idea
+client/admin/admin.bundle.js
+client/app/app.bundle.js
