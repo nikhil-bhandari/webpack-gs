@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nikhil-bhandari/webpack-gs/issues"
   },
-  "homepage": "https://github.com/nikhil-bhandari/webpack-gs#readme"
+  "homepage": "https://github.com/nikhil-bhandari/webpack-gs#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1"
+  }
 }
