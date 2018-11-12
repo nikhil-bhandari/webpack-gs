@@ -18,5 +18,8 @@
   "homepage": "https://github.com/nikhil-bhandari/webpack-gs#readme",
   "devDependencies": {
     "webpack": "^4.25.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
