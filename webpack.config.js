@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const adminConfig = {
   name: 'adminApp',
@@ -15,7 +16,13 @@ const adminConfig = {
       name: 'vendor',
       chunks: 'all',
     }
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      filename: 'index.html',
+      template: 'client/app/index.template.html'
+    })
+  ]
 };
 
 const appConfig = {
@@ -33,7 +40,13 @@ const appConfig = {
       name: 'vendor',
       chunks: 'all',
     }
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      filename: 'index.html',
+      template: 'client/app/index.template.html'
+    })
+  ]
 };
 
 module.exports = [adminConfig, appConfig];
