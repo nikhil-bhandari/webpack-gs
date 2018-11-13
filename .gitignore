@@ -1,3 +1,5 @@
 node_modules
 .idea
 *.bundle.js
+client/app/index.html
+client/admin/index.html
