@@ -3,11 +3,12 @@ const path = require('path');
 const adminConfig = {
   name: 'adminApp',
   entry: {
-    admin:  './client/admin/app.js'
+    admin:  './client/admin/app.js',
+    vendor: ['lodash']
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'client' ,'admin')
+    path: path.resolve(__dirname, 'client' ,'admin'),
   },
   mode: 'production'
 };
@@ -16,6 +17,7 @@ const appConfig = {
   name: 'publicApp',
   entry: {
     app: './client/app/app.js',
+    vendor: ['lodash']
   },
   output: {
     filename: '[name].bundle.js',
