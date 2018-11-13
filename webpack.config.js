@@ -10,9 +10,10 @@ const adminConfig = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'client', 'admin'),
   },
-  devTool: 'eval-source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    contentBase: 'client/admin'
+    contentBase: 'client/admin',
+    port: 6091
   },
   mode: 'production',
   optimization: {
@@ -38,9 +39,10 @@ const appConfig = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'client', 'app')
   },
-  devTool: 'eval-source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    contentBase: 'client/app'
+    contentBase: 'client/app',
+    port: 6091
   },
   mode: 'production',
   optimization: {
