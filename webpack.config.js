@@ -10,6 +10,10 @@ const adminConfig = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'client', 'admin'),
   },
+  devTool: 'eval-source-map',
+  devServer: {
+    contentBase: 'client/admin'
+  },
   mode: 'production',
   optimization: {
     splitChunks: {
@@ -33,6 +37,10 @@ const appConfig = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'client', 'app')
+  },
+  devTool: 'eval-source-map',
+  devServer: {
+    contentBase: 'client/app'
   },
   mode: 'production',
   optimization: {
