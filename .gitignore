@@ -1,6 +1,3 @@
 node_modules
 .idea
-client/admin/admin.bundle.js
-client/app/app.bundle.js
-client/app/vendor.bundle.js
-client/admin/vendor.bundle.js
+*.bundle.js
