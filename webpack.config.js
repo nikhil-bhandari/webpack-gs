@@ -9,7 +9,6 @@ const adminConfig = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'client', 'admin'),
-    publicPath: '/admin'
   },
   devtool: 'eval-source-map',
   devServer: {
@@ -38,8 +37,7 @@ const appConfig = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'client', 'app'),
-    publicPath: '/'
+    path: path.resolve(__dirname, 'client', 'app')
   },
   devtool: 'eval-source-map',
   devServer: {
