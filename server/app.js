@@ -9,3 +9,5 @@ app.use('/', express.static('client/app'));
 app.listen(PORT, () => {
   console.log(`Server Listening on ${PORT}`);
 });
+
+exports = module.exports = app;
